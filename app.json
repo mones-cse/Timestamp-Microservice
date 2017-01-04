@@ -1,0 +1,8 @@
+{
+  "name": "Timestamp Microservice",
+  "description": "Timestamp Microservice for free code camp project",
+  "repository": "git+https://github.com/mones-cse/Timestamp-Microservice.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express"],
+  "image": "heroku/nodejs"
+}
