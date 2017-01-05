@@ -10,12 +10,8 @@ app.get('/',function(req,res){
 })
 
 app.get('/:input',function(req,res){
-    // res.send(req.params.input);
-    //moment.unix(1450137600).format("MMM D YYYY");
-    //moment("December 15, 2015").format('X');
     var isValidDate =moment(''+req.params.input).isValid();
     var isValidUnixDate =moment.unix(''+req.params.input).isValid();
-    // console.log(req.parms.input);
     if(isValidDate || isValidUnixDate){
        if(isValidUnixDate){
         res.send('unix :'+req.params.input+' natural: '+moment.unix(''+req.params.input).format('MMM D YYYY'));
